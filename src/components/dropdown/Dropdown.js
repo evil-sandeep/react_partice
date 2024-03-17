@@ -1,25 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react'
 
-const Dropdown = () => {
+const Dropdown = ({ options, onSelect }) => {
+    const [selectOptions, setSelectOptions] = useState('')
+
+    const handleOptions = (option) => {
+        setSelectOptions(option)
+        onSelect(option)
+    }
     return (
-        <nav className="bg-white border-b border-black">
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="flex justify-between h-16">
-                    {/* Logo */}
-                    <div className="flex-shrink-0 flex items-center">
-                        <img className="block lg:hidden h-8 w-auto" src="logo.svg" alt="Logo" />
-                        <img className="hidden lg:block h-8 w-auto" src="logo.svg" alt="Logo" />
-                    </div>
-                    {/* Navigation Links */}
-                    <div className="hidden md:flex md:items-center md:space-x-4">
-                        <a href="/" className="text-black hover:text-gray-500">Home</a>
-                        <a href="/about" className="text-black hover:text-gray-500">About</a>
-                        <a href="/contact" className="text-black hover:text-gray-500">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    );
-};
+        <select value={selectOptions} onChange={e => handleOptions(e.target.value)}>
+            <option value="">Select an option</option>
+            {options.map((option) => (
+                <option value={option.value} key={option.value}>{option.label}</option>
+            ))}
+        </select>
+    )
+}
 
-export default Dropdown;
+export default Dropdown
