@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { PRODUCT_API } from '../constant';
+import { PRODUCT_API } from '../../constant';
 import '../Style/Body.css'
 
 const Search = () => {

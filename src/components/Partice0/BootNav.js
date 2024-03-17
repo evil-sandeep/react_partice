@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BootNav = () => {
     return (
@@ -9,9 +10,10 @@ const BootNav = () => {
                 </div>
                 <div>
                     <ul className='flex gap-5'>
-                        <li>Home</li>
-                        <li>Cart</li>
-                        <li>Contact</li>
+                        <li>  <Link to='/'> Home  </Link>  </li>
+                        <li>  <Link to='/cart'> cart  </Link>  </li>
+                        <li>  <Link to='/contact'> contact  </Link>  </li>
+                       
                     </ul>
                 </div>
             </div>
