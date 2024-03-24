@@ -43,12 +43,13 @@
 import React from 'react'
 import ImageSlider from './components/causal/ImageSlider'
 import Help2 from './components/dropdown/Help2'
+import Login from './components/login-form/Login'
+import Login2 from './components/login-form/Login2'
 
 const App = () => {
   return (
     <>
-      <ImageSlider />
-      <Help2/>
+      <Login2></Login2>
     </>
   )
 }
