@@ -42,11 +42,13 @@
 // Dropdown
 import React from 'react'
 import ImageSlider from './components/causal/ImageSlider'
+import Help2 from './components/dropdown/Help2'
 
 const App = () => {
   return (
     <>
       <ImageSlider />
+      <Help2/>
     </>
   )
 }
