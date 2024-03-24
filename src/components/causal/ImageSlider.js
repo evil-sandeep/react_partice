@@ -6,19 +6,10 @@ const data = ['https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.j
     'https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/09943d85-b8c7-4d64-af31-1a27d1b76698/arrow.png',
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXkJEvLQ7HiXKIg7OxEtTYC9YwAX914jBzrraMUncxQ&s"]
 
-
-
-
 const ImageSlider = () => {
 
     const [imageIndex, setImageIndex] = useState(0)
-
-    const nextHandler = () => {
-
-        setImageIndex((imageIndex + 1) % data.length)
-
-    }
-    const previousHandler = () => {
+    const prevHandler = () => {
         if (imageIndex === 0) {
             setImageIndex(data.length - 1)
         } else {
@@ -26,27 +17,31 @@ const ImageSlider = () => {
         }
 
     }
+
+    const nextHandler = () => {
+        setImageIndex((imageIndex + 1) % data.length)
+    }
+
     useEffect(() => {
         const timer = setTimeout(() => {
-            nextHandler()
-        }, 3000)
+            nextHandler();
+        }, 4000)
         return () => {
             clearTimeout(timer)
         }
     }, [imageIndex])
-
-
-
     return (
-        <div className='flex justify-center m-2 p-2 '>
-            <button className='p-3 font-semibold ' onClick={previousHandler}>Previous</button>
+        <div className='flex justify-center m-2 p-3'>
+            <button className='font-extrabold ' onClick={prevHandler}>  &lt;  Prev</button>
             {data.map((image, index) => (
-                <img src={image} key={index} alt="ImgeSlider" className={'w-[500px] h-[300px] ' + (imageIndex === index ? 'block' : 'hidden')} />
+                <img src={image} alt="imageslidr" key={index} className={'h-[300px] w-[500px] object-contain ' + (imageIndex === index ? 'block' : 'hidden')} />
             ))}
 
-            <button className='p-3 font-semibold' onClick={nextHandler}>Next</button>
+            <button className='font-extrabold ' onClick={nextHandler}> Next  &gt;  </button>
         </div>
     )
 }
+
+
 
 export default ImageSlider
