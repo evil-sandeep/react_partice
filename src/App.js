@@ -41,12 +41,12 @@
 
 // Dropdown
 import React from 'react'
-import Help from './components/dropdown/Help'
+import ImageSlider from './components/causal/ImageSlider'
 
 const App = () => {
-  return(
+  return (
     <>
-    <Help/>
+      <ImageSlider />
     </>
   )
 }
