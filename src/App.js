@@ -42,12 +42,14 @@
 // Dropdown
 import React from 'react'
 import Register from './components/login-form/Register'
+import Register2 from './components/login-form/Register2'
 
 
 const App = () => {
   return (
     <>
       <Register />
+      <Register2 />
 
     </>
   )
