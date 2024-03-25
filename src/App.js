@@ -41,15 +41,17 @@
 
 // Dropdown
 import React from 'react'
-import Register from './components/login-form/Register'
-import Register2 from './components/login-form/Register2'
+// import Register from './components/login-form/Register'
+// import Register2 from './components/login-form/Register2'
+import Pagniaion from './components/pagination/Pagniaion'
 
 
 const App = () => {
   return (
     <>
-      <Register />
-      <Register2 />
+      {/* <Register />
+      <Register2 /> */}
+      <Pagniaion />
 
     </>
   )
