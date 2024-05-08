@@ -44,6 +44,13 @@ import React from 'react'
 // import Register from './components/login-form/Register'
 // import Register2 from './components/login-form/Register2'
 import Pagniaion from './components/pagination/Pagniaion'
+import Help2 from './components/dropdown/Help2'
+import Dropdown2 from './components/dropdown/Dropdown2'
+import ToDooo from './components/toDoList/ToDooo'
+import Wheather from './components/wheather/Wheather'
+import Weatherr from './components/wheather/Weatherr'
+import Weatther from './components/wheather/Weatther'
+import ImageSlider from './components/causal/ImageSlider'
 
 
 const App = () => {
@@ -51,7 +58,9 @@ const App = () => {
     <>
       {/* <Register />
       <Register2 /> */}
-      <Pagniaion />
+      <Weatherr />
+      <Weatther />
+      <ImageSlider/>
 
     </>
   )

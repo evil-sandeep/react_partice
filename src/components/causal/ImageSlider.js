@@ -9,13 +9,13 @@ const data = ['https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.j
 const ImageSlider = () => {
 
     const [imageIndex, setImageIndex] = useState(0)
+
     const prevHandler = () => {
         if (imageIndex === 0) {
             setImageIndex(data.length - 1)
         } else {
             setImageIndex(imageIndex - 1)
         }
-
     }
 
     const nextHandler = () => {

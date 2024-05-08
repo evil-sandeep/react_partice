@@ -23,7 +23,7 @@ const Register2 = () => {
         if (confirmPassword !== userPassword) {
             errMessage += 'Pasword Not match'
         }
-
+        
         setError(errMessage)
 
         if (errMessage === '') {

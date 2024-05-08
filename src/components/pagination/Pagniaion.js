@@ -17,7 +17,6 @@ const Pagniaion = () => {
                 settotalPage(data.total / 10)
             }
 
-            // console.log(data.products)
         } catch (error) {
             console.error('Error is ' + error)
         }

@@ -34,7 +34,7 @@ const Wheather = () => {
                 <button type='submit'>Generate</button>
             </form>
 
-            {error && <p>{error}</p>}
+ {error && <p>{error}</p>}
             {weather && (
                 <div>
                     <h3>{weather.name}</h3>
