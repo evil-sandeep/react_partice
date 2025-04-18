@@ -3,6 +3,7 @@ import React from 'react'
 
 import Demmo from './components/useeffectss/Demmo'
 import Quoteapp from './components/Quote/Quoteapp'
+import Joke from './components/jokeApp/Joke'
 
 
 
@@ -11,8 +12,8 @@ const App = () => {
   return (
     <>
       {/* <Demmo /> */}
-      
-<Quoteapp/>
+      <Joke/>
+{/* <Quoteapp/> */}
     </>
   )
 }
