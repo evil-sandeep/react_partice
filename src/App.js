@@ -11,6 +11,7 @@ import Objectss from './components/usesState/Objectss'
 import ClassState from './components/usesState/ClassState'
 import AdvancedForm from './components/foorm/AdvancedForm'
 import ConditionRender from './components/rendering/ConditionRender'
+import Counter from './components/Counter'
 // import EmojiSearch from './components/emoji/EmojiSearch.js'
 
 
@@ -19,13 +20,7 @@ import ConditionRender from './components/rendering/ConditionRender'
 const App = () => {
   return (
     <>
-      {/* <RandomColor/> */}
-      {/* <EmojiSearch /> */}
-      {/* <Maiiin/> */}
-      {/* <Objectss/> */}
-      {/* <ClassState/> */}
-      {/* <AdvancedForm/> */}
-      <ConditionRender/>
+    <Counter/>
 
     </>
   )
