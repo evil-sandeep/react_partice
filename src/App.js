@@ -13,6 +13,7 @@ import AdvancedForm from './components/foorm/AdvancedForm'
 import ConditionRender from './components/rendering/ConditionRender'
 import Counter from './components/Counter'
 import ShowHideText from './components/ShowHideText'
+import InputFieldMirror from './components/InputFieldMirror'
 // import EmojiSearch from './components/emoji/EmojiSearch.js'
 
 
@@ -22,7 +23,8 @@ const App = () => {
   return (
     <>
     {/* <Counter/> */}
-    <ShowHideText/>
+    {/* <ShowHideText/> */}
+    <InputFieldMirror/>
 
     </>
   )
