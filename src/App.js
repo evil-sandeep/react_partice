@@ -12,6 +12,7 @@ import ClassState from './components/usesState/ClassState'
 import AdvancedForm from './components/foorm/AdvancedForm'
 import ConditionRender from './components/rendering/ConditionRender'
 import Counter from './components/Counter'
+import ShowHideText from './components/ShowHideText'
 // import EmojiSearch from './components/emoji/EmojiSearch.js'
 
 
@@ -20,7 +21,8 @@ import Counter from './components/Counter'
 const App = () => {
   return (
     <>
-    <Counter/>
+    {/* <Counter/> */}
+    <ShowHideText/>
 
     </>
   )
