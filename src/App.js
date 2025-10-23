@@ -14,6 +14,8 @@ import ConditionRender from './components/rendering/ConditionRender'
 import Counter from './components/Counter'
 import ShowHideText from './components/ShowHideText'
 import InputFieldMirror from './components/InputFieldMirror'
+import Partice from './components/Partice'
+import BgColorChanger from './components/BgColorChanger'
 // import EmojiSearch from './components/emoji/EmojiSearch.js'
 
 
@@ -22,10 +24,8 @@ import InputFieldMirror from './components/InputFieldMirror'
 const App = () => {
   return (
     <>
-    {/* <Counter/> */}
-    {/* <ShowHideText/> */}
-    <InputFieldMirror/>
-
+    <Partice/>
+<BgColorChanger/>
     </>
   )
 }
