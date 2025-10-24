@@ -19,15 +19,15 @@ const BgColorChanger = () => {
         randomCLR()
         const intervalID = setInterval(() => {
             randomCLR()
-        }, 20000)
+        }, 2000)
         return () => clearInterval(intervalID)
     }, [])
     return (
         <div style={{ backgroundColor: colorCode }}>
             <h1>COlour COde is :-{colorCode}</h1>
-            <div onClick={randomCLR}>
+            
                 <button onClick={randomCLR}>🔄 Generate Color</button>
-            </div>
+           
         </div>
     )
 }

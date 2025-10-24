@@ -16,6 +16,7 @@ import ShowHideText from './components/ShowHideText'
 import InputFieldMirror from './components/InputFieldMirror'
 import Partice from './components/Partice'
 import BgColorChanger from './components/BgColorChanger'
+import CharacterCountr from './components/CharacterCountr'
 // import EmojiSearch from './components/emoji/EmojiSearch.js'
 
 
@@ -24,8 +25,7 @@ import BgColorChanger from './components/BgColorChanger'
 const App = () => {
   return (
     <>
-    <Partice/>
-<BgColorChanger/>
+    <CharacterCountr/>
     </>
   )
 }
