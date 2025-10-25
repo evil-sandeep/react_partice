@@ -5,6 +5,9 @@ import '../src/index.css'
 
 import DiasableButton from './components/DiasableButton'
 import FetchAPI from './components/FetchAPI'
+import Partice from './components/Partice'
+import ConditionalRendering from './components/ConditionalRendering'
+import SimpleFormValidation from './components/SimpleFormValidation'
 
 
 
@@ -12,9 +15,13 @@ import FetchAPI from './components/FetchAPI'
 const App = () => {
   return (
     <>
-   <DiasableButton/>
-   <FetchAPI/>
+   {/* <DiasableButton/>
+   <FetchAPI/> */}
+   {/* <Partice/> */}
+  <ConditionalRendering/>
+  <SimpleFormValidation/>
     </>
+
   )
 }
 

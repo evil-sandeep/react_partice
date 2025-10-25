@@ -5,7 +5,7 @@ const FetchAPI = () => {
 
     const fetchData = async () => {
         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-        if (!response.ok) throw new Error('Api failed')
+        if (!response.ok) throw new Error('Api not load')
         const data = await response.json()
         setProduct(data)
         console.log(data)
@@ -18,7 +18,7 @@ const FetchAPI = () => {
         <div>
             <ol>
                 {product.map((name, id) => (
-                    <li key={id} className='border  m-2 p-2  w-auto'>{name.username}</li>
+                    <li key={product.id} className='border  m-2 p-2  w-auto'>{name.username}</li>
                 ))}
             </ol>
         </div>
