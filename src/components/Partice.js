@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { BrowserRouter as Router,Link } from 'react-router-dom'
 
 
 const Partice = () => {
@@ -8,7 +9,23 @@ const Partice = () => {
     const [colorCode, setColorCode] = useState('')
     const [chCount, setChCount] = useState('')
     const [dButton, setDButton] = useState('')
+    const [name, setName] = useState('')
+    const [emial, setEmail] = useState('')
+    const [mssg, setMssg] = useState('')
 
+
+    const handleSubmit = () => {
+        if (!name.trim() || !emial.trim()) {
+            setMssg('All Feild Are Required')
+            return
+        }
+        if (!emial.endsWith('@gmail.com')) {
+            setMssg('Please enter valid email address ends with @gmail.com')
+            return
+        }
+        setMssg('Form submitted successfully')
+        alert(`Hay ${name} your email id is ${emial}`)
+    }
 
 
     const randomClr = () => {
@@ -110,6 +127,16 @@ const Partice = () => {
 
 
             </div>
+
+            <div>
+                <input type="text" name="text" value={name} placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                <input type="emial" name="emial" value={emial} placeholder='U R Emild id' onChange={(e) => setEmail(e.target.value)} />
+
+
+                <button onClick={handleSubmit}>Submit</button>
+                <h1>{mssg}</h1>
+            </div>
+
         </div>
 
     )
