@@ -11,7 +11,6 @@ const Notes = ({ note, setNotes }) => {
             <ul>
                 {note.map((n, i) => (
                     <li key={i}>{n} <button onClick={removeTask}>remove  </button></li>
-
                 ))}
             </ul>
         </div>

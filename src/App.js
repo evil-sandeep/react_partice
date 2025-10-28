@@ -10,6 +10,8 @@ import ConditionalRendering from './components/ConditionalRendering'
 import SimpleFormValidation from './components/SimpleFormValidation'
 import PassPropsData from './components/PassPropsData'
 import ParentProps from './components/ParentProps'
+import RenderLists from './components/RenderLists'
+import DeleteItemfromList from './components/DeleteItemfromList'
 
 
 
@@ -25,6 +27,8 @@ const App = () => {
     <Link to='FetchAPI'>FetchAPI </Link> |{" "}
     <Link to='SimpleFormValidation'>SimpleFormValidation </Link> |{" "}
     <Link to='ParentProps'>ParentProps</Link> |{' '}
+    <Link to='/renderlists'>RenderLists</Link>|{' '}
+    <Link to='/DeleteItemfromList'>DeleteItemfromList</Link>
   </nav>
 
   <Routes>
@@ -32,6 +36,7 @@ const App = () => {
     <Route path='/fetchapi' element={<FetchAPI/>}></Route>
     <Route path='/simpleformvalidation' element={<SimpleFormValidation/>}></Route>
     <Route path='/ParentProps'element={<ParentProps/>}></Route>
+    <Route path='/DeleteItemfromList' element={<DeleteItemfromList/>}></Route>
   </Routes>
   </div>
   </BrowserRouter>
