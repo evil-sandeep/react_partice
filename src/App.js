@@ -8,6 +8,8 @@ import FetchAPI from './components/FetchAPI'
 import Partice from './components/Partice'
 import ConditionalRendering from './components/ConditionalRendering'
 import SimpleFormValidation from './components/SimpleFormValidation'
+import PassPropsData from './components/PassPropsData'
+import ParentProps from './components/ParentProps'
 
 
 
@@ -22,12 +24,14 @@ const App = () => {
     <Link to='Partice'>Partice </Link> |{" "}
     <Link to='FetchAPI'>FetchAPI </Link> |{" "}
     <Link to='SimpleFormValidation'>SimpleFormValidation </Link> |{" "}
+    <Link to='ParentProps'>ParentProps</Link> |{' '}
   </nav>
 
   <Routes>
     <Route path='/partice' element={<Partice/>}></Route>
     <Route path='/fetchapi' element={<FetchAPI/>}></Route>
     <Route path='/simpleformvalidation' element={<SimpleFormValidation/>}></Route>
+    <Route path='/ParentProps'element={<ParentProps/>}></Route>
   </Routes>
   </div>
   </BrowserRouter>
