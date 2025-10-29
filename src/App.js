@@ -14,6 +14,7 @@ import RenderLists from './components/RenderLists'
 import DeleteItemfromList from './components/DeleteItemfromList'
 import UseEffectExm from './components/UseEffectExm'
 import ToggleDarkLightMode from './components/ToggleDarkLightMode'
+import SearchFilter from './components/SearchFilter'
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
     <Link to='/DeleteItemfromList'>DeleteItemfromList</Link>|{' '}
     <Link to="/useEffectPartice">UseEffect</Link>|{' '}
     <Link to='/ToggleDarkLightMode'>ToggleDarkLightMode</Link>|{' '}
+    <Link to='SearchFilter'>SearchFilter</Link>
   </nav>
 
   <Routes>
@@ -43,6 +45,7 @@ const App = () => {
     <Route path='/DeleteItemfromList' element={<DeleteItemfromList/>}></Route>
     <Route path='/useEffectPartice' element={<UseEffectExm/>}></Route>
     <Route path='/ToggleDarkLightMode' element={<ToggleDarkLightMode/>}></Route>
+    <Route path="/SearchFilter" element={<SearchFilter/>}></Route>
   </Routes>
   </div>
   </BrowserRouter>
