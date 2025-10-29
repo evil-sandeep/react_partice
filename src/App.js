@@ -13,6 +13,7 @@ import ParentProps from './components/ParentProps'
 import RenderLists from './components/RenderLists'
 import DeleteItemfromList from './components/DeleteItemfromList'
 import UseEffectExm from './components/UseEffectExm'
+import ToggleDarkLightMode from './components/ToggleDarkLightMode'
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
     <Link to='/renderlists'>RenderLists</Link>|{' '}
     <Link to='/DeleteItemfromList'>DeleteItemfromList</Link>|{' '}
     <Link to="/useEffectPartice">UseEffect</Link>|{' '}
+    <Link to='/ToggleDarkLightMode'>ToggleDarkLightMode</Link>|{' '}
   </nav>
 
   <Routes>
@@ -40,6 +42,7 @@ const App = () => {
     <Route path='/ParentProps'element={<ParentProps/>}></Route>
     <Route path='/DeleteItemfromList' element={<DeleteItemfromList/>}></Route>
     <Route path='/useEffectPartice' element={<UseEffectExm/>}></Route>
+    <Route path='/ToggleDarkLightMode' element={<ToggleDarkLightMode/>}></Route>
   </Routes>
   </div>
   </BrowserRouter>
