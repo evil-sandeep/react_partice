@@ -15,6 +15,8 @@ import DeleteItemfromList from './components/DeleteItemfromList'
 import UseEffectExm from './components/UseEffectExm'
 import ToggleDarkLightMode from './components/ToggleDarkLightMode'
 import SearchFilter from './components/SearchFilter'
+import LiftState from './components/LiftState'
+import Parent from './components/liftState/Parent'
 
 
 
@@ -34,7 +36,9 @@ const App = () => {
     <Link to='/DeleteItemfromList'>DeleteItemfromList</Link>|{' '}
     <Link to="/useEffectPartice">UseEffect</Link>|{' '}
     <Link to='/ToggleDarkLightMode'>ToggleDarkLightMode</Link>|{' '}
-    <Link to='SearchFilter'>SearchFilter</Link>
+    <Link to='/SearchFilter'>SearchFilter</Link> |{" "}
+    <Link to='/LiftState'>LiftState</Link>|{" "}
+    <Link to='/Parent'>Parent</Link>
   </nav>
 
   <Routes>
@@ -46,6 +50,9 @@ const App = () => {
     <Route path='/useEffectPartice' element={<UseEffectExm/>}></Route>
     <Route path='/ToggleDarkLightMode' element={<ToggleDarkLightMode/>}></Route>
     <Route path="/SearchFilter" element={<SearchFilter/>}></Route>
+    <Route path="/LiftState" element={<LiftState/>}></Route>
+    <Route path='/Parent' element={<Parent/>}></Route>
+    
   </Routes>
   </div>
   </BrowserRouter>
