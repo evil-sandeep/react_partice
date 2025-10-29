@@ -12,6 +12,7 @@ import PassPropsData from './components/PassPropsData'
 import ParentProps from './components/ParentProps'
 import RenderLists from './components/RenderLists'
 import DeleteItemfromList from './components/DeleteItemfromList'
+import UseEffectExm from './components/UseEffectExm'
 
 
 
@@ -28,7 +29,8 @@ const App = () => {
     <Link to='SimpleFormValidation'>SimpleFormValidation </Link> |{" "}
     <Link to='ParentProps'>ParentProps</Link> |{' '}
     <Link to='/renderlists'>RenderLists</Link>|{' '}
-    <Link to='/DeleteItemfromList'>DeleteItemfromList</Link>
+    <Link to='/DeleteItemfromList'>DeleteItemfromList</Link>|{' '}
+    <Link to="/useEffectPartice">UseEffect</Link>|{' '}
   </nav>
 
   <Routes>
@@ -37,6 +39,7 @@ const App = () => {
     <Route path='/simpleformvalidation' element={<SimpleFormValidation/>}></Route>
     <Route path='/ParentProps'element={<ParentProps/>}></Route>
     <Route path='/DeleteItemfromList' element={<DeleteItemfromList/>}></Route>
+    <Route path='/useEffectPartice' element={<UseEffectExm/>}></Route>
   </Routes>
   </div>
   </BrowserRouter>
