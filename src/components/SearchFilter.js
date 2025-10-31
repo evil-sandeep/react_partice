@@ -5,7 +5,7 @@
 // (Hint: use .filter() and useState)
 
 import React, { useState } from 'react'
-
+ 
 const SearchFilter = () => {
     const [name, setName] = useState(["Sandeep", "Rahul", "Priya", "Sneha", "Amit"])
     const [search, setSearch] = useState('')

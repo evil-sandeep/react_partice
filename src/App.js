@@ -17,6 +17,7 @@ import ToggleDarkLightMode from './components/ToggleDarkLightMode'
 import SearchFilter from './components/SearchFilter'
 import LiftState from './components/LiftState'
 import Parent from './components/liftState/Parent'
+import Accordion from './components/Accordion'
 
 
 
@@ -38,7 +39,8 @@ const App = () => {
     <Link to='/ToggleDarkLightMode'>ToggleDarkLightMode</Link>|{' '}
     <Link to='/SearchFilter'>SearchFilter</Link> |{" "}
     <Link to='/LiftState'>LiftState</Link>|{" "}
-    <Link to='/Parent'>Parent</Link>
+    <Link to='/Parent'>Parent</Link>| {' '}
+    <Link to='/Accordion'>Accordion </Link>| {' '}
   </nav>
 
   <Routes>
@@ -52,6 +54,7 @@ const App = () => {
     <Route path="/SearchFilter" element={<SearchFilter/>}></Route>
     <Route path="/LiftState" element={<LiftState/>}></Route>
     <Route path='/Parent' element={<Parent/>}></Route>
+    <Route path='/Accordion' element={<Accordion/>}></Route>
     
   </Routes>
   </div>
