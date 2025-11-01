@@ -26,7 +26,10 @@ const Accordian = () => {
                 <button>
                     {item.title}
                 </button>
-                </div>
+                </div>  
+                <h1>
+                    sandeep
+                </h1>
             </div>
         ))}
        </div>
